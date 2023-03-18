@@ -6,12 +6,12 @@ var current_image_num = 0;
 const gallery_images = document.querySelector("#gallery-cards-space");
 
 for (let i = 0; i < card_information.length; i++) {
-    gallery_images.insertAdjacentHTML('beforeend', '<div class="gallery-cards"><div class="card-title"><h3>' + card_information[i][2] + '</h3></div><img src="images/Gallery360x360/' + card_information[i][0] + '" onclick="On(' + i + ')"><div id="description-button"><img src="images/downupbutton.png" alt="" onclick="Description_On(' + i + ')"></div><div class="image-description" id="des' + i + '"><a>' + card_information[i][3] + '</a></div></div>');
+    gallery_images.insertAdjacentHTML('beforeend', '<div class="gallery-cards"><div class="card-title"><h3>' + card_information[i][2] + '</h3></div><img src="images/gallery360x360/' + card_information[i][0] + '" onclick="On(' + i + ')"><div id="description-button"><img src="images/downupbutton.png" alt="" onclick="Description_On(' + i + ')"></div><div class="image-description" id="des' + i + '"><a>' + card_information[i][3] + '</a></div></div>');
     document.getElementById("des" + i).style.display = "none";
 };
 
 function On(number) {
-    document.getElementById("img-to-display").src = "images/Gallery1800x1800/" + card_information[number][1];
+    document.getElementById("img-to-display").src = "images/gallery1800x1800/" + card_information[number][1];
     document.getElementById("img-fullscreen").style.display = "block";
     current_image_num = number;
 };
@@ -22,14 +22,14 @@ function Off() {
 
 function Next_Image() {
     if(current_image_num < card_information.length - 1){
-        document.getElementById("img-to-display").src = "images/Gallery1800x1800/" + card_information[current_image_num + 1][1];
+        document.getElementById("img-to-display").src = "images/gallery1800x1800/" + card_information[current_image_num + 1][1];
         current_image_num++;
     }
 };
 
 function Previous_Image() {
     if(current_image_num > 0){
-        document.getElementById("img-to-display").src = "images/Gallery1800x1800/" + card_information[current_image_num - 1][1];
+        document.getElementById("img-to-display").src = "images/gallery1800x1800/" + card_information[current_image_num - 1][1];
         current_image_num--;
     }
 };
