@@ -6,8 +6,6 @@ body {
 
 header {
     width: 100%;
-    height: 300px;
-    text-align: center;
 }
 
 h1 {
@@ -28,6 +26,41 @@ a {
     font-size: 14px;
 }
 
+.header-text {
+    background-color: rgb(4, 21, 33);
+    text-align: center;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#random-image {
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 20px;
+}
+
+#random-image:hover {
+    cursor: pointer;
+}
+
+#random-text {
+    text-align: center;
+}
+
+#random-text a {
+    color: rgb(15, 29, 41);
+}
+
+.random-text-toggle {
+    background-color: rgb(130, 20, 20);
+}
+
 #gallery-cards-space {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +75,18 @@ a {
     width: 24%;
     height: auto;
     margin: 0.5%;
+}
+
+.gallery-cards:hover, .gallery-cards img:hover {
+    background-color: rgb(20, 55, 130);
+}
+
+.gallery-cards:hover .card-title {
+    background-color: rgb(0, 55, 130);
+}
+
+.gallery-cards:hover #description-button {
+    background-color: rgb(0, 55, 130);
 }
 
 .card-title {
@@ -138,6 +183,13 @@ a {
 
 #previous-img-button:hover {
     cursor: pointer;
+}
+
+footer {
+    background-color: rgb(4, 21, 33);
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
 }
 
 @media only screen and (max-width: 800px) {
