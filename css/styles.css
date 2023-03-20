@@ -37,12 +37,12 @@ a {
     border-radius: 30px;
 }
 
-#random-image {
-    height: 500px;
+#random-image 
+    max-height: 500px;
+    max-width: 90%;
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    margin: 20px;
 }
 
 #random-image:hover {
