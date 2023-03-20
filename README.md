@@ -1,3 +1,10 @@
 # Gallery
-This project helps you to display your images on your website in organized manner.
-It is not hard to add new images all you have to do is add image then put its in the array.
+### Features:
+* This project display images on your website in an organized manner.
+* Each image have their own card.
+* Each card has a title, an image and a description.
+* Flexbox is used to arrange the cards on the page.
+* Cards will resize if the page size is changed.
+* Layout adapts if browser window is resized.
+* Gallery will be displayed in a single column if viewed on a mobile device.
+* Every card has a button to open the description.
