@@ -38,8 +38,7 @@ a {
 }
 
 #random-image 
-    max-height: 500px;
-    max-width: 90%;
+    height: 500px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
