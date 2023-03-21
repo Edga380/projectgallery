@@ -37,7 +37,7 @@ a {
     border-radius: 30px;
 }
 
-#random-image 
+#random-image {
     max-height: 500px;
     max-width: 90%;
     position: relative;
