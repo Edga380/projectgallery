@@ -1,6 +1,6 @@
 # Gallery
 ### Features:
-* This project display images on your website in an organized manner.
+* This project displays images in an organized manner.
 * Each image have their own card.
 * Each card has a title, an image and a description.
 * Flexbox is used to arrange the cards on the page.
